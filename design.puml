@@ -1,0 +1,15 @@
+@startuml
+
+(*) -right-> [set the need track registers]Init
+--> ReadNextLine
+--> ParseData
+if "Is in track registers" then
+    -right-> [True] "Print this line"
+    -right-> Update NeedTraceRegisters
+    --> ReadNextLine
+else
+    -left-> [False] ReadNextLine
+endif
+
+-left->[if all reader](*)
+@enduml
