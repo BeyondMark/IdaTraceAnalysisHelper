@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 import setuptools
 
-with open("README.md", "r") as fh:
+with open("README.md", "r",encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="ida_trace_analysis_helper",
-    version="0.0.1",
+    version="0.0.2",
     author="beyond_mark",
-    author_email="",
+    author_email="luck.yangbo@gmail.com",
     description="parse the ida trace file and track the register from",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="",
+    url="https://github.com/BeyondMark/IdaTraceAnalysisHelper",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
