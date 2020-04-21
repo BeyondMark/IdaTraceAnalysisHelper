@@ -13,7 +13,6 @@ class TrackRegisterInfo:
     def __str__(self):
         return "{} User Line:{}".format(self.register_name, self.line_index_when_used)
 
-
 class TraceLineData:
     def __init__(self, data: str, index):
         self.changed_registers = []
